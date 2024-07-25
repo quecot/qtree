@@ -76,37 +76,11 @@ This command will traverse /path/to/directory and output the directory structure
 
 ### Building from Source
 
-Follow the [Build Instructions](#build-instructions) to compile the project. The source code is organized with the main logic in `src/main.c`.
+Follow the [Build Instructions](#build-instructions) to compile the project. The source code is organized with the main logic in [src/main.c](src/main.c).
 
 ### CMake Configuration
 
-The project uses CMake for build configuration. The `CMakeLists.txt` file is configured to use `clang` as the compiler and `clang-tidy` for code quality checks. The build type defaults to `Release`.
-
-```cmake
-cmake_minimum_required(VERSION 3.10)
-project(qtree LANGUAGES C VERSION 0.1.0)
-
-message(STATUS "CMake ${CMAKE_VERSION}")
-
-set(CMAKE_C_STANDARD 17)
-set(CMAKE_C_STANDARD_REQUIRED True)
-
-set(CMAKE_C_COMPILER "clang")
-set(CMAKE_C_CLANG_TIDY "clang-tidy")
-
-if(NOT CMAKE_BUILD_TYPE)
-    set(CMAKE_BUILD_TYPE Release)
-endif()
-
-add_executable(qtree src/main.c)
-
-target_compile_options(qtree PRIVATE
-    -Werror
-    -Wall
-    -Wextra
-    -Wpedantic
-)
-```
+The project uses CMake for build configuration. The [CMakeLists.txt](CMakeLists.txt) file is configured to use `clang` as the compiler and `clang-tidy` for code quality checks. The build type defaults to `Release`.
 
 ## License
 
