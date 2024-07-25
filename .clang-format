@@ -1,0 +1,13 @@
+BasedOnStyle: LLVM
+
+AlignConsecutiveAssignments:
+  Enabled: true
+  AcrossEmptyLines: true
+  AcrossComments: true
+  AlignCompound: true
+  AlignFunctionPointers: true
+  PadOperators: true
+
+InsertNewlineAtEOF: true
+
+ColumnLimit: 100
