@@ -76,7 +76,7 @@ This command will traverse /path/to/directory and output the directory structure
 
 ### Building from Source
 
-Follow the Build instructions to compile the project. The source code is organized with the main logic in `src/main.c`.
+Follow the [Build Instructions](#build-instructions) to compile the project. The source code is organized with the main logic in `src/main.c`.
 
 ### CMake Configuration
 
